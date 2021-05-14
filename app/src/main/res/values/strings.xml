@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MiTienda</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nombreCompleto">Full Name</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="login">Login</string>
+    <string name="signup">Signup</string>
+    <string name="nombreProducto">Product Name</string>
+    <string name="description_product">Description Product</string>
+    <string name="Price">$ 850</string>
+    <string name="score">5</string>
+    <string name="price">Price:</string>
+    <string name="totalscore">score:</string>
+    <string name="deliverytime">deliveryTime:</string>
+    <string name="category">category:</string>
+</resources>

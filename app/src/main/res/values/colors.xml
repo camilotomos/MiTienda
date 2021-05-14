@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="colorPrimario">#FF264B77</color>
+    <color name="colorPrimarioDark">#FF2F4C58</color>
+    <color name="colorAcent">#FF5FC28C  </color>
+    <color name="colorAcentDark">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorFondoDark">#FF00243F</color>
+    <color name="colorHint">#FFBDBDBD</color>
+
+    <color name="colorGooglePlus">#DD4B39</color>
+    <color name="colorGooglePlusDark">#B92D21</color>
+</resources>

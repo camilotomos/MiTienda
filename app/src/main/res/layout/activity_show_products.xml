@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFondoDark"
+    tools:context=".ShowProductsActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonDrinks"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/login_edit_text_height"
+        android:background="@drawable/button_riple_bg"
+        android:drawableStart="@drawable/ic_cafe"
+        android:padding="10dp"
+        android:text=" Drinks"
+        android:textColor="@color/white"
+        android:textSize="@dimen/login_text_xl_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonCake"
+        app:layout_constraintTop_toTopOf="@+id/buttonCake" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonCake"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/login_edit_text_height"
+        android:background="@drawable/button_riple_bg"
+        android:drawableStart="@drawable/ic_ponque"
+        android:layout_marginTop="12dp"
+        android:padding="10dp"
+        android:text=" Cakes"
+        android:textColor="@color/white"
+        android:textSize="@dimen/login_text_xl_size"
+        app:layout_constraintEnd_toStartOf="@+id/buttonDrinks"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonPie"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonPie"
+        android:layout_width="88dp"
+        android:layout_height="@dimen/login_edit_text_height"
+        android:background="@drawable/button_riple_bg"
+        android:drawableStart="@drawable/ic_pastel"
+        android:padding="10dp"
+        android:text=" Pie"
+        android:textColor="@color/white"
+        android:textSize="@dimen/login_text_xl_size"
+        app:layout_constraintEnd_toStartOf="@+id/buttonCake"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonCake" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewproducts"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCake"
+        app:layout_constraintBottom_toTopOf="@id/buttonall"
+        tools:listitem="@layout/item_products" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonall"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/login_edit_text_height"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/button_riple_bg"
+        android:padding="10dp"
+        android:text="All Products"
+        android:textColor="@color/white"
+        android:textSize="@dimen/login_text_xl_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerviewproducts" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonalogout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/login_edit_text_height"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/button_ripple_bg_google"
+        android:padding="10dp"
+        android:text="Logout"
+        android:textColor="@color/white"
+        android:textSize="@dimen/login_text_xl_size"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonall"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonall" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
